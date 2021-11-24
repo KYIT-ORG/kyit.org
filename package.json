@@ -6,7 +6,7 @@
 	"scripts": {
 		"pretest": "rm -rf dist",
 		"test": "eleventy --serve --watch --port 3000",
-		"start": "builtin npm run alias"
+		"build": "eleventy"
 	},
 	"keywords": [],
 	"author": "",
