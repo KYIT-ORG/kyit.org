@@ -1,0 +1,11 @@
+{% set css %}
+    {% include 'css/reset.css' %}
+    {% include 'css/font.css' %}
+    {% include 'css/layout.css' %}
+    {% include 'css/component.css' %}
+    {% include 'css/holi.css' %}
+    {% include 'css/media.css' %}
+{% endset %}
+<style>
+    {{ css | safe }}
+</style>

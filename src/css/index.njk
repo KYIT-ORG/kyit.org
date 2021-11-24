@@ -1,0 +1,31 @@
+{% for post in collections['t3-css'] | reverse %}
+
+    {% include 'link-card.njk' %}
+    
+{# <a href="{{ post.url }}">
+<div class="card">
+
+    <h3>{{ post.data.title }}</h3>
+
+    <h6>{{ post.date }}</h6>
+
+    <p>1 min to read</p>
+
+</div>
+</a> #}
+
+{% endfor %}
+
+<pre>
+
+{% for k,v in collections %}
+{{ k }}
+{% endfor %}
+
+</pre>
+
+{# ---
+title: CSS
+tags: t1
+description: CSS stuff
+--- #}

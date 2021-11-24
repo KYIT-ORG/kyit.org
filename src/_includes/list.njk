@@ -1,0 +1,57 @@
+{% set isSub = (page.url.endsWith('/')) %}
+
+{% if isSub %}
+
+    {% for x in collectionPage %}
+
+        <a href="{{ x.data.prettyURL }}">
+
+            <div class="link-tag">
+
+                <h2>
+                    {{ x.data.title }}
+                </h2>   
+
+                <span class="link-tag-date">
+                    {{ x.data.postDate }}
+                </span>    
+            </div>
+            
+        </a>
+
+    {% endfor%}
+
+{% endif %}
+
+    {# {% for x in collections.all | collectionPage(page) %}
+        <a href="{{ x.url }}">
+
+            <div class="link-tag">
+
+                <h2>
+                    {{ x.data.title }}
+                </h2>   
+
+                <span class="link-tag-date">
+                    {{ x.date | postDate }}
+                </span>    
+            </div>
+            
+        </a>
+    {% endfor%}
+
+    <hr> 
+    
+    eleventyConfig.addFilter('collectionPage', function(c, p) {
+        urlArray = p.url.split('/').filter(x => x)
+        return c.filter(i => {
+            itemArray = i.url.split('/').filter(x => x)
+            return i.url.startsWith(p.url) && 
+                   itemArray.length == urlArray.length + 1
+        })
+    })
+
+	eleventyConfig.addFilter('postDate', function(dateObj) {
+		return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED)
+    })
+    #}

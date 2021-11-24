@@ -1,0 +1,51 @@
+body {
+	min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+	font-family: sans-serif;
+    display: flex;
+	flex-direction: column;
+	
+	background-color: var(--color-bg);
+	color: var(--color-text);
+
+}
+
+main {
+	flex-grow: 1;
+}
+
+nav {
+	color: var(--color-devto);
+	font-weight: bold;
+}
+
+nav a {
+}
+
+header {
+	font-weight: 900;
+	font-style: italic;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	/* background-color: var(--color-bg);
+	color: var(--color-text); */
+}
+footer {
+	font-size: .7rem;
+	text-align: center;
+}
+/* header, footer {
+	background-color: #111;
+	color: #fff;
+} */
+
+header, footer, main, nav {
+	padding: .5rem 1rem;
+}
+
+section {
+	margin: 3rem auto;
+}

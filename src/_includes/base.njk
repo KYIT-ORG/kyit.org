@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>{{ title }}</title>
+    {% include 'meta.njk' %}
+    {% include 'css/css.njk' %}
+
+</head>
+
+<body>
+
+    <header>
+        <a href="/">Know Your IT</a>
+        {% include 'social.njk' %}
+    </header>
+    
+    {% include 'nav.njk' %}
+   
+    <main>
+
+        <h1>{{ title }}</h1>
+
+        {% include 'list.njk' %}
+
+        {{ content | safe }}
+    </main>
+
+    <footer> &copy; 2021 KYIT.org</footer>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+    background-color: salmon;
+    color: #fff;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --color-bg: #003035;
+    --color-text: lemonchiffon;
+    --color-text: cornsilk;
+    --color-text: khaki;
+    --color-text: mintcream;
+
+
+    --color-patreon: #FF9D7A;
+    --color-codepen: #FFDE69;
+    --color-devto: #A4E8A3;
+    --color-twitter: #8AE6FB;
+    --color-twitch: #E2D4FF;
+    --color-linkedin: #A3CDFF;
+    --color-github: #FFAAD3;
+
+    --color-primary: #ab79d6;
+    --color-secondary: #d367c1;
+    --color-blue: #00bbcb;
+    --color-yellow: #dedf40;
+    --color-green: #62cb5c;
+    --gradient: var(--color-secondary) 10%,var(--color-yellow) 25%,var(--color-green) 50%,var(--color-blue) 75%,var(--color-primary) 90%;
+    
+}
