@@ -1,0 +1,35 @@
+---
+link: busybox
+title: Busybox - most common Linux command in 1 utility
+desc: busybox - most common Linux command in 1 utility
+order: 1
+---
+
+<section>
+    <h2>What is Busybox</h2>
+    
+    <p>
+    BusyBox is a multi-call binary that combines many common Unix
+    utilities into a single executable.  Most people will create a
+    link to busybox for each function they wish to use and BusyBox
+    will act like whatever it was invoked as.    
+    </p>
+    
+    <img src="https://media.giphy.com/media/xT5LMxAxpGSb5AZt8A/giphy.gif" />
+</section>
+
+<section>
+    <h2>How to use busybox</h2>
+
+<p>
+Usage: busybox [function [arguments]...]
+   or: busybox --list[-full]
+   or: busybox --install [-s] [DIR]
+   or: function [arguments]...
+
+</p>
+    {% highlight "bash" %}
+busybox command
+    {% endhighlight %}
+
+</section>
