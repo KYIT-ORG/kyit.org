@@ -49,3 +49,7 @@ header, footer, main, nav {
 section {
 	margin: 3rem auto;
 }
+
+p {
+	margin: 1rem;
+}
