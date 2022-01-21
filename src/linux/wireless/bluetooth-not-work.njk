@@ -39,15 +39,32 @@ sudo systemctl daemon-reload
 sudo systemctl restart bluetooth.service
 
     {% endhighlight %}
-    
     <p>
     Note: The double usage of ExecStart= in the SystemD bluetooth.service.d override file is important! 
+    <b>
+    </b>
+       </p>
+    <p>
+    
+<p>
     The first line with empty assignment, "ExecStart=", clears out the value of ExecStart 
-    so we can override it later rather than append to it. 
+    so we can override it later rather than append to it.
+</p> 
+  
+     </p>
+    <p>
     Some SystemD settings such as ExecStart behave as an appended list when specifying them multiple times.
+    </p>
+    <p>
     Many options that you want to override will apply to this use case when we use foo.service.d/*.conf files.
+    </p>
+    <p>
     So it's important to notice that an extra Foo= setting may be necessary to override a value rather than append to a list.
     </p>
+
+    
+    
+ 
 
 </section>
 
