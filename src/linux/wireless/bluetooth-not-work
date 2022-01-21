@@ -1,0 +1,54 @@
+---
+link: bluetooth-not-work
+title: Linux Bluetooth not work
+desc: Linux Bluetooth not work
+order: 1
+---
+
+<section>
+    <h2>Error: sap</h2>
+
+    {% highlight "bash" %}
+    
+bluetoothd[pid]: Sap driver initialization failed.
+bluetoothd[pid]: sap-server: Operation not permitted
+
+    {% endhighlight %}
+</section>
+
+<section>
+    <h2>What is sap</h2>
+    
+    <p>
+    SIM Access Profile (SAP) allows a Bluetooth enabled device to access data contained in the SIM card of another Bluetooth enabled device.
+    </p>
+    
+    <p>
+    You probably don't need this function, so you can disable it.
+    </p>
+
+    {% highlight "bash" %}
+sudo mkdir /etc/systemd/system/bluetooth.service.d/
+sudo vi /etc/systemd/system/bluetooth.service.d/01-disable-sap-plugin.conf
+
+[Service]
+ExecStart=
+ExecStart=/usr/lib/bluetooth/bluetoothd --noplugin=sap
+
+sudo systemctl daemon-reload
+sudo systemctl restart bluetooth.service
+
+    {% endhighlight %}
+    
+    <p>
+    Note: The double usage of ExecStart= in the SystemD bluetooth.service.d override file is important! 
+    The first line with empty assignment, "ExecStart=", clears out the value of ExecStart 
+    so we can override it later rather than append to it. 
+    Some SystemD settings such as ExecStart behave as an appended list when specifying them multiple times.
+    Many options that you want to override will apply to this use case when we use foo.service.d/*.conf files.
+    So it's important to notice that an extra Foo= setting may be necessary to override a value rather than append to a list.
+    </p>
+
+</section>
+
+
