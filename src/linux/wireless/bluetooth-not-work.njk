@@ -9,6 +9,19 @@ order: 1
     <h2>Error: sap</h2>
 
     {% highlight "bash" %}
+sudo systemctl restart bluetooth.service
+
+● bluetooth.service - Bluetooth service
+Loaded: loaded (/lib/systemd/system/bluetooth.service; disabled; vendor preset: 
+Active: active (running) since 四 2022-01-20 16:17:41 CST; 7s ago
+ Docs: man:bluetoothd(8)
+Main PID: 29774 (bluetoothd)
+Status: "Running"
+Tasks: 1
+Memory: 2.1M
+  CPU: 39ms
+CGroup: /system.slice/bluetooth.service
+       └─29774 /usr/lib/bluetooth/bluetoothd
     
 bluetoothd[pid]: Sap driver initialization failed.
 bluetoothd[pid]: sap-server: Operation not permitted
