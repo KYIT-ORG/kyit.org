@@ -16,7 +16,7 @@ order: 1
     userdel kyit
     done!!!
 `
-<section>
+<!-- <section>
     <h2>Add user only</h2>
 
     {% highlight "bash" %}
@@ -33,7 +33,7 @@ order: 1
     done!!!
     {% endhighlight %}
 
-</section>
+</section> -->
 
 
 
