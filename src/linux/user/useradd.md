@@ -11,6 +11,11 @@ order: 1
     done!!!
 `
 
+## Delete user only
+`
+    userdel kyit
+    done!!!
+`
 <section>
     <h2>Add user only</h2>
 
