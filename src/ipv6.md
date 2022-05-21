@@ -1,4 +1,6 @@
-# IPv6 Addresses Explained
+---
+title: IPv6 Addresses Explained
+---
 
 > IPv6 is next generation of Internet address after IPv4
 
