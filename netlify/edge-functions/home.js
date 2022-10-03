@@ -38,6 +38,9 @@ export default async(r, c) => {
 
 //     console.log(r.headers, '\n\n@@@\n\n', c, '\n\n@@@\n\n')
 
-    return new Response(abc)
+    return new Response(abc, {
+    
+      headers: { "content-type": "text/html" }
+    })
 
 }
