@@ -7,7 +7,7 @@ export default async(r, c) => {
 
     let is_curl = ua.includes('curl')
 
-    console.log(is_curl)
+    console.log(r.headers, '\n\n@@@\n\n')
 
     return new Response(is_curl ? 'old school' : 'new school')
 
