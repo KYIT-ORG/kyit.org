@@ -1,12 +1,14 @@
 // export default () => new Response("Hello kyit.org");
 
 
-export default async(request, context) => {
+export default async(r, c) => {
   
-  let ua = request.headers['user-agent']
+    let ua = r.headers.get('user-agent')
 
-  console.log(ua, request.method)
-  
-  return context.json({ ua })
+    let is_curl = ua.includes('curl')
+
+    console.log(is_curl)
+
+    return new Response(is_curl ? 'old school' : 'new school')
 
 }
