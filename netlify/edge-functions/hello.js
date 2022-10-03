@@ -5,6 +5,6 @@ export default async(request, context) => {
 
   console.log(request, '~~~\n\n\n', context)
   
-  return context.json({ context })
+  return context.json({ request })
 
 }
