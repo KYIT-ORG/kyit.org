@@ -3,6 +3,6 @@ path = "/test"
 function = "hello"
 
 
-[[edge_functions]]
-path = "/"
-function = "home"
+# [[edge_functions]]
+# path = "/"
+# function = "home"
