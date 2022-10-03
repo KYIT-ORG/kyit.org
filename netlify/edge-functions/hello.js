@@ -2,9 +2,11 @@
 
 
 export default async(request, context) => {
-
-  console.log(request, '~~~\n\n\n', context)
   
-  return context.json({ request })
+  let ua = request.headers['user-agent']
+
+  console.log(ua, request.method)
+  
+  return context.json({ ua })
 
 }
