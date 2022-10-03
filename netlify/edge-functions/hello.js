@@ -3,6 +3,8 @@
 
 export default async(request, context) => {
 
-  return context.json(request)
+  console.log(request, '~~~\n\n\n', context)
+  
+  return context.json({ request })
 
 }
