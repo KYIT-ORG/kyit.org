@@ -12,7 +12,7 @@ export default async(r, c) => {
 
 </head>
 
-<body style="background: #333; color: #000;">
+<body style="background: #333; color: #fff;">
 
     <header>
         <a href="/">Know Your IT</a>
