@@ -13,6 +13,6 @@ export default async(r, c) => {
     
     if(!is_curl) return
   
-    return new Response('hello Curl!!!')
+    return new Response('\e[1;31m Hi Kyit !!! \e[0m')
 
 }
