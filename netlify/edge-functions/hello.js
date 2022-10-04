@@ -15,7 +15,7 @@ export default async(r, c) => {
   
     //let t = '\033[32m This is red text \033[0m'
     //let t = 'hello 333'
-    let t1 = '\x1b[33;42maaaaaa\x1b[0m'
+    let t1 = '\x1b[1;3;4;33;47maaaaaa\x1b[0m'
     
     let t2 = '\x1b[34:45mzzzzzz\x1b[0m'
   
