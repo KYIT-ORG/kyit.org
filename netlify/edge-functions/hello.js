@@ -15,8 +15,10 @@ export default async(r, c) => {
   
     //let t = '\033[32m This is red text \033[0m'
     //let t = 'hello 333'
-    let t = '\x1b[31maaaaaa\n\x1b[60mbbbbbb\n\n'
+    let t1 = '\x1b[31maaaaaa\x1b[0m'
+    
+    let t2 = '\x1b[23mzzzzzz\x1b[0m'
   
-    return new Response(t)
+    return new Response(`${t1} \n\n\n ${t2}`)
 
 }
