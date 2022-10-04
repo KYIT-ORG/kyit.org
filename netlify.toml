@@ -5,4 +5,4 @@ function = "hello"
 
 [[edge_functions]]
 path = "/"
-function = "home"
+function = "console"
