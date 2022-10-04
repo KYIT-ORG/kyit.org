@@ -9,7 +9,7 @@ export default async(r, c) => {
 
     let t1 = `\x1b[1;33m\n
     Your IP: ${c.ip} \n
-    Your City: ${c.geo.city} \n
+    Your City: ${c.geo.city} - ${c.subdivision.name} \n
     Your Country: ${c.geo.country.name} \n
     \x1b[0m`
     
