@@ -7,7 +7,11 @@ export default async(r, c) => {
     if(!is_curl) return
   
 
-    let t1 = `\x1b[1;33m  Your IP: ${c.ip} \n Your City: ${c.geo.city} \x1b[0m`
+    let t1 = `\x1b[1;33m\n
+    Your IP: ${c.ip} \n
+    Your City: ${c.geo.city} \n
+    Your Country: ${c.geo.country.name} \n
+    \x1b[0m`
     
   
     return new Response(t1)
