@@ -15,7 +15,7 @@ export default async(r, c) => {
   
     //let t = '\033[32m This is red text \033[0m'
     //let t = 'hello 333'
-    let t = '\x1b[31msfsf\x1b[0m'
+    let t = '\x1b[31maaaaaa\n\x1b[60mbbbbbb\n\n'
   
     return new Response(t)
 
