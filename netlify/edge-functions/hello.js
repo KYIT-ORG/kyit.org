@@ -13,6 +13,7 @@ export default async(r, c) => {
     
     if(!is_curl) return
   
-    return new Response('\e[1;31m Hi Kyit !!! \e[0m')
+    let r = '\033[32m This is red text \033[0m'
+    return new Response(r)
 
 }
