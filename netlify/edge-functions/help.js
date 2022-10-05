@@ -6,6 +6,6 @@ export default async(r, c) {
   curl kyit.org/help+network\n
   `
   
-  new Response(html)
+  return new Response(html)
 
 }
