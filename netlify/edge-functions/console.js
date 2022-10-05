@@ -13,9 +13,8 @@ export default async(r, c) => {
 |    Your IP: ${c.ip}                                                                         |\n
 |    Your Location: ${c.geo.city} - ${c.geo.subdivision.name} - ${c.geo.country.name}         |\n 
 |    Your Browser: ${ua}                                                                      |\n
-|    \x1b[0m                                                                                  |\n
 |                                                                                             |\n
------------------------------------------------------------------------------------------------\n`
+-----------------------------------------------------------------------------------------------\n\x1b[0m`
     
     return new Response(t1)
 
