@@ -6,3 +6,8 @@ function = "hello"
 [[edge_functions]]
 path = "/"
 function = "console"
+
+
+[[edge_functions]]
+path = "/help"
+function = "help"
