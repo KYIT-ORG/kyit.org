@@ -1,4 +1,4 @@
-export default async(r, c) {
+export default async(r, c) => {
 
   let html = `
   Kyit.org's help page...\n
