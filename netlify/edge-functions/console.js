@@ -8,10 +8,14 @@ export default async(r, c) => {
   
 
     let t1 = `\x1b[1;33m\n
-    Your IP: ${c.ip} \n
-    Your Location: ${c.geo.city} - ${c.geo.subdivision.name} - ${c.geo.country.name} \n
-    Your Browser: ${ua} \n
-    \x1b[0m`
+-----------------------------------------------------------------------------------------------\n
+|                                                                                             |\n
+|    Your IP: ${c.ip}                                                                         |\n
+|    Your Location: ${c.geo.city} - ${c.geo.subdivision.name} - ${c.geo.country.name}         |\n 
+|    Your Browser: ${ua}                                                                      |\n
+|    \x1b[0m                                                                                  |\n
+|                                                                                             |\n
+-----------------------------------------------------------------------------------------------\n`
     
     return new Response(t1)
 
